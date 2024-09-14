@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "module2"
+version = "0.1.0"
+description = ""
+authors = ["Ali Khalid <alikhalid786hsp@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+packaging = "^24.1"
+pandas = "^2.2.2"
+scikit-learn = "^1.5.1"
+runner-py = "^0.5"
+sqlalchemy = "^2.0.34"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

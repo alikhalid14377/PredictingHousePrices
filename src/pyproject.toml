@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "predicting-house-price"
+version = "0.1.0"
+description = ""
+authors = ["Ali Khalid <alikhalid786hsp@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+loguru = "^0.7.2"
+pydantic-settings = "^2.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

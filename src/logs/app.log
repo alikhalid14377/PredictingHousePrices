@@ -1,0 +1,5 @@
+2024-09-14 09:48:38.370 | INFO     | config.logger:configure_logging:40 - Logger initialized with level: DEBUG
+2024-09-14 09:48:58.763 | INFO     | __main__:main:12 - Runnig the application
+2024-09-14 09:48:58.771 | INFO     | model.model_service:load_model:17 - Checking the existance of model config file at model\models/rf_db_v2
+2024-09-14 09:48:59.187 | INFO     | model.model_service:predict:27 - Making prediction!!
+2024-09-14 09:48:59.291 | INFO     | __main__:main:17 - [5210.29444444]
