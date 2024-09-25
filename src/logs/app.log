@@ -1,5 +1,24 @@
-2024-09-14 09:48:38.370 | INFO     | config.logger:configure_logging:40 - Logger initialized with level: DEBUG
-2024-09-14 09:48:58.763 | INFO     | __main__:main:12 - Runnig the application
-2024-09-14 09:48:58.771 | INFO     | model.model_service:load_model:17 - Checking the existance of model config file at model\models/rf_db_v2
-2024-09-14 09:48:59.187 | INFO     | model.model_service:predict:27 - Making prediction!!
-2024-09-14 09:48:59.291 | INFO     | __main__:main:17 - [5210.29444444]
+2024-09-21 16:42:55.445 | INFO     | config.logger:configure_logging:40 - Logger initialized with level: DEBUG
+2024-09-21 16:43:56.298 | INFO     | __main__:main:12 - Runnig the application
+2024-09-21 16:43:56.298 | INFO     | model.model_service:load_model:17 - Checking the existance of model config file at model\models/rf_db_v2
+2024-09-21 16:43:56.490 | INFO     | model.model_service:predict:27 - Making prediction!!
+2024-09-21 16:43:56.628 | INFO     | __main__:main:17 - [5210.29444444]
+2024-09-21 16:44:28.199 | INFO     | config.logger:configure_logging:40 - Logger initialized with level: DEBUG
+2024-09-21 16:44:33.952 | INFO     | __main__:main:12 - Runnig the application
+2024-09-21 16:44:33.953 | INFO     | model.model_service:load_model:17 - Checking the existance of model config file at model\models/rf_db_v2
+2024-09-21 16:44:33.954 | WARNING  | model.model_service:load_model:21 - Model not found at model\models/rf_db_v2 -> building the model rf_db_v2
+2024-09-21 16:44:33.954 | INFO     | model.pipeline.model:build_model:9 - staring up building the model pipeline
+2024-09-21 16:44:33.955 | INFO     | model.pipeline.preparation:prepare_data:7 - starting up prepossing pipeline
+2024-09-21 16:44:33.955 | INFO     | model.pipeline.collection:load_data_from_db:13 - Extracting the table from the database
+2024-09-21 16:44:34.096 | INFO     | model.pipeline.preparation:encode_cat_cols:21 - encoding categorical columns: ['balcony', 'storage', 'parking', 'furnished', 'garage']
+2024-09-21 16:44:34.138 | INFO     | model.pipeline.preparation:parse_garden_col:25 - parsing garden column
+2024-09-21 16:44:36.302 | INFO     | model.pipeline.model:get_X_y:38 - Defining X and y variables.
+ X vars: {col_X} 
+ y vars: {col_y}
+2024-09-21 16:44:36.306 | INFO     | model.pipeline.model:split_data:42 - Splitting data into train and test sets
+2024-09-21 16:44:36.382 | INFO     | model.pipeline.model:train_model:49 - Training a model with hyperparameters
+2024-09-21 16:44:36.382 | DEBUG    | model.pipeline.model:train_model:53 - Grid space = {'n_estimators': [100, 200, 300], 'max_depth': [3, 6, 9, 12]}
+2024-09-21 16:47:43.677 | INFO     | model.pipeline.model:model_evaluate:65 - Evaluating model performance. Score=0.7707638529326462
+2024-09-21 16:47:43.917 | INFO     | model.pipeline.model:save_model:69 - saving the model to a directory model\models/rf_db_v2
+2024-09-21 16:47:44.561 | INFO     | model.model_service:predict:27 - Making prediction!!
+2024-09-21 16:47:44.748 | INFO     | __main__:main:17 - [5423.84880952]
